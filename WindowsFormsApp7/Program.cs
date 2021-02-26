@@ -11,12 +11,17 @@ namespace WindowsFormsApp7
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
+        /// 
+
+
+        public static int user_id = 0;
         [STAThread]
+
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Authorization());
         }
     }
 }
