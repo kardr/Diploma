@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.MaquetteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DiplomaDataSet = new WindowsFormsApp7.DiplomaDataSet();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -38,15 +38,15 @@
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.участникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.макетыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.статусToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.мероприятиеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.добавлениеНовыхToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выборУчастниковДляНагражденияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.макетыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.добавлениеНовогоМакетаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выборМакетаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.статусToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.добавлениеНвогоСтатусаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выборСтатусаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.мероприятиеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.добавлениеМероприятияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выборМероприятияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.MaquetteBindingSource)).BeginInit();
@@ -67,9 +67,9 @@
             // reportViewer1
             // 
             this.reportViewer1.DocumentMapWidth = 1;
-            reportDataSource2.Name = "DataSet1";
-            reportDataSource2.Value = this.MaquetteBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.MaquetteBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "WindowsFormsApp7.Report1.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(-32768, -1);
             this.reportViewer1.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
@@ -114,33 +114,6 @@
             this.участникиToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
             this.участникиToolStripMenuItem.Text = "Участники ";
             // 
-            // макетыToolStripMenuItem
-            // 
-            this.макетыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.добавлениеНовогоМакетаToolStripMenuItem,
-            this.выборМакетаToolStripMenuItem});
-            this.макетыToolStripMenuItem.Name = "макетыToolStripMenuItem";
-            this.макетыToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.макетыToolStripMenuItem.Text = "Макеты";
-            // 
-            // статусToolStripMenuItem
-            // 
-            this.статусToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.добавлениеНвогоСтатусаToolStripMenuItem,
-            this.выборСтатусаToolStripMenuItem});
-            this.статусToolStripMenuItem.Name = "статусToolStripMenuItem";
-            this.статусToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
-            this.статусToolStripMenuItem.Text = "Статус";
-            // 
-            // мероприятиеToolStripMenuItem
-            // 
-            this.мероприятиеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.добавлениеМероприятияToolStripMenuItem,
-            this.выборМероприятияToolStripMenuItem});
-            this.мероприятиеToolStripMenuItem.Name = "мероприятиеToolStripMenuItem";
-            this.мероприятиеToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
-            this.мероприятиеToolStripMenuItem.Text = "Мероприятие";
-            // 
             // добавлениеНовыхToolStripMenuItem
             // 
             this.добавлениеНовыхToolStripMenuItem.Name = "добавлениеНовыхToolStripMenuItem";
@@ -152,6 +125,15 @@
             this.выборУчастниковДляНагражденияToolStripMenuItem.Name = "выборУчастниковДляНагражденияToolStripMenuItem";
             this.выборУчастниковДляНагражденияToolStripMenuItem.Size = new System.Drawing.Size(274, 22);
             this.выборУчастниковДляНагражденияToolStripMenuItem.Text = "Выбор участников для награждения";
+            // 
+            // макетыToolStripMenuItem
+            // 
+            this.макетыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.добавлениеНовогоМакетаToolStripMenuItem,
+            this.выборМакетаToolStripMenuItem});
+            this.макетыToolStripMenuItem.Name = "макетыToolStripMenuItem";
+            this.макетыToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.макетыToolStripMenuItem.Text = "Макеты";
             // 
             // добавлениеНовогоМакетаToolStripMenuItem
             // 
@@ -166,6 +148,15 @@
             this.выборМакетаToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
             this.выборМакетаToolStripMenuItem.Text = "Выбор макета";
             // 
+            // статусToolStripMenuItem
+            // 
+            this.статусToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.добавлениеНвогоСтатусаToolStripMenuItem,
+            this.выборСтатусаToolStripMenuItem});
+            this.статусToolStripMenuItem.Name = "статусToolStripMenuItem";
+            this.статусToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.статусToolStripMenuItem.Text = "Статус";
+            // 
             // добавлениеНвогоСтатусаToolStripMenuItem
             // 
             this.добавлениеНвогоСтатусаToolStripMenuItem.Name = "добавлениеНвогоСтатусаToolStripMenuItem";
@@ -177,6 +168,15 @@
             this.выборСтатусаToolStripMenuItem.Name = "выборСтатусаToolStripMenuItem";
             this.выборСтатусаToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
             this.выборСтатусаToolStripMenuItem.Text = "Выбор статуса";
+            // 
+            // мероприятиеToolStripMenuItem
+            // 
+            this.мероприятиеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.добавлениеМероприятияToolStripMenuItem,
+            this.выборМероприятияToolStripMenuItem});
+            this.мероприятиеToolStripMenuItem.Name = "мероприятиеToolStripMenuItem";
+            this.мероприятиеToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
+            this.мероприятиеToolStripMenuItem.Text = "Мероприятие";
             // 
             // добавлениеМероприятияToolStripMenuItem
             // 

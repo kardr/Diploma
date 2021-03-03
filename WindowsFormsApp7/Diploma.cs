@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace WindowsFormsApp7
 {
@@ -42,8 +43,9 @@ namespace WindowsFormsApp7
             Add_maquette m = new Add_maquette();
             if (m.ShowDialog() == DialogResult.OK)
             {
-                //копировать файл
-                //добавить объект в БД
+                File.Copy(m.label2.Text, "Maquette//"+Path.GetFileName(m.label2.Text));
+                Maquette maq = new Maquette();
+                maq.Insert(m.textBox1.Text, Path.GetFileName(m.label2.Text), Program.user_id);
             }
         }
     }
